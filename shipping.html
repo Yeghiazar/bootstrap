@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <main class="page payment-page">
+        <section class="payment-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Shipping</h2>
+                    <p>This is Shipping page. You need to add/confirm your shipping information.</p>
+                </div>
+                <form>
+                    <div class="card-details">
+                        <h3 class="title">Country</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-5">
+                                <label for="country">Country</label>
+                                <select id="country" class="custom-select">
+                                    <option selected>Choose</option>
+                                    <option value="1">Armenia</option>
+                                    <option value="2">Russia</option>
+                                    <option value="3">USA</option>
+                                </select>
+                            </div>
+                        </div>
+                        <h3 class="title">Personal Information</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-7">
+                                <label for="">Name</label>
+                                <div class="input-group expiration-date">
+                                    <input type="text" class="form-control" placeholder="First Name" aria-label="MM"
+                                        aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" placeholder="Last Name" aria-label="YY"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-5">
+                                <label for="company">Company</label>
+                                <input id="company" type="text" class="form-control" placeholder="Company Name"
+                                    aria-label="Card Holder" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <h3 class="title">Street Address</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <div class="input-group expiration-date">
+                                    <input id="streetAddress1" type="text" class="form-control"
+                                        placeholder="Address Line 1" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                                    <input id="streetAddress2" type="text" class="form-control"
+                                        placeholder="Address Line 2" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="title">City/State/Postal</h3>
+                        <div class="row">
+                            <div class="form-group col-sm-5">
+                                <input id="City" type="text" class="form-control"
+                                        placeholder="City" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input id="state" type="text" class="form-control"
+                                        placeholder="State" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+                            <div class="form-group col-sm-3">
+                                <input id="Postal" type="text" class="form-control"
+                                        placeholder="Post Code" aria-label="Card Holder"
+                                        aria-describedby="basic-addon1">
+                            </div>
+
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <a href="confirm.html" type="button" class="btn btn-primary btn-block">Proceed</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
