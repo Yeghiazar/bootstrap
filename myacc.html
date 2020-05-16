@@ -18,35 +18,37 @@
     <title>Online Shop</title>
 </head>
 <body>
-<div class="container main-header">
+<div class="container main-header" >
    <div class="row navbar navbar-light ">
 
 
-                <div class="col-sm col-lg-3">
+                <div class="d-md-block
+                d-none col-sm col-lg-3">
                     Contact Us : +37493355555
                 </div>
 
-                  <div class="col-sm col-lg-3">
+                  <div class="d-md-block
+                d-none col-sm col-lg-3">
                     LOW TAXES , HI PRODUCTIVITY
                   </div>
 
-                  <div class="col-sm col-lg-2">
+                  <div class="col-4 col-md-2">
                        <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>AM</option>
+                        <option selected>EN</option>
                         <option>RU</option>
-                        <option>EN</option>
+                        <option>AM</option>
                       </select>
                   </div>
 
-                   <div class="col-sm col-lg-2">
+                   <div class="col-4 col-md-2">
                        <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>AMD</option>
-                        <option>RUB</option>
-                        <option>USD</option>
+                        <option selected>&#36</option>
+                        <option>&#8381</option>
+                        <option>&#1423</option>
                       </select>
                   </div>
 
-                   <div class="col-sm col-lg-2">
+                   <div class="col-4 col-lg-2">
                      <a href="shopping-cart.html"><button type="button" class="btn btn-info">Shopping Cart <span class="badge badge-danger">99+</span></button></a>
                     
                   </div>
@@ -56,18 +58,19 @@
     <div class="row navbar navbar-dark bg-dark">
       
               
-                <div class="col-sm col-lg-7">
+                <div class="col-sm col-6 col-lg-5">
                   <a href="index.html" class="text-decoration-none shadow-lg">ONLINE SHOPPING</a>
                 </div>
 
-                <div class="col-sm col-lg-3">
-                              <form class="form-inline my-2 my-lg-0">
+                <div class="col-sm d-md-block
+                d-none col-lg-3 ">
+                       <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class=" my-2 my-sm-0 btn btn-info" type="submit">Search</button>
                       </form>
                 </div>
 
-                <div class="col-sm col-lg-2">
+                <div class="col-sm col-6 col-lg-2">
                       <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           My Account
@@ -168,24 +171,57 @@
 
 
 
-
-
 <div class="row justify-content-center">
-        <div class="col-12 col-md-3 col-lg-2 p-2 d-none d-md-block">
-            <div class="list-group">
-                <a class="list-group-item list-group-item-action btn btn-primary" href="myaccount.html">My
-                    Account</a>
-                <a class="list-group-item list-group-item-action btn btn-primary" href="myinfo.html">My Info</a>
-            </div>
-            <div class="col-12 mt-3">
-                <a href="#AccountDetails">Account Details</a>
-                <br>
-                <a href="#PaymentOptions">Payment Options</a>
-                <br>
-                <a href="#Shipping">Billing and Shipping</a>
-            </div>
-        </div>
+        
         <div class="col-md-8 m-3">
+            <div class="row justify-content-center">
+                <div id="AccountDetails" class="col-12 bg-light p-3">
+                    <h3 class="text-primary">My Orders</h3>
+                    <p class="text-secondary" style="font-size: 12px;">
+                        Here is your last orders.
+                    </p>
+                    <div class="row">
+                        
+
+                          <table class="table ">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nuber</th>
+                          <th scope="col">Oreder Name</th>
+                          <th scope="col">Order N</th>
+                          <th scope="col">Order date</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Termaltake Cooler 1100W</td>
+                          <td>1045623</td>
+                          <td>22.12.2018</td>
+                          <td>66.22$</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Intel Core I9-9700k</td>
+                          <td>1054896</td>
+                          <td>02.02.2020</td>
+                          <td>195$</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Seagate 1TB</td>
+                          <td>1098456</td>
+                          <td>02.02.2020</td>
+                          <td>90$</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    
+
+                    </div>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 <div id="AccountDetails" class="col-12 bg-light p-3">
                     <h3 class="text-primary">Account Details</h3>
@@ -216,6 +252,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row justify-content-center m-2">
                 <div class="col-12 bg-light p-3">
                     <h3 id="PaymentOptions" class="text-primary">Payment Options</h3>
